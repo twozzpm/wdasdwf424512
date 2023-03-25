@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Discord Bayii</title>
+	<meta charset="UTF-8">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<body>
+	<div class="header">
+  <a href="#" class="logo">Discord Bayii</a>
+  <div class="header-right">
+    <a class="active" href="#">Ana Sayfa</a>
+    <a href="https://discord.gg/w5ZbEPGhkF" target="_blank">Discord</a>
+    <a href="#iletisim">İletişim</a>
+  </div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br>
+<!-- The grid: three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:#4caf50;">Ücretsiz Bot Paketi</div>
+  <div class="column" onclick="openTab('b2');" style="background:#2196f3;">Standart Bot Paketi</div>
+  <div class="column" onclick="openTab('b3');" style="background:#f44336;">Pro Bot Paketi</div>
+</div>
+
+<!-- The expanding grid (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:#4caf50">
+  <!-- If you want the ability to close the container, add a close button -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Ücretsiz Bot Paketi</h2>
+  <p>7/24 Aktif: ✅ (Aktif etmek için bize ulaşmalısınız. <a href="https://discord.gg/w5ZbEPGhkF" style="color: white;" class="burayatikla"> Discord</a>)</p>
+  <p>Özel Kod: 3</p>
+  <p>Reklam: ✅</p>
+  <p style="font-weight: bold;">Fiyat: Ücretsiz</p>
+  <br>
+  <button class="satin-al" onclick="parent.location='https://discord.gg/w5ZbEPGhkF'"><i class="fa-solid fa-cart-shopping"></i> Satın Al</button>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:#2196f3">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Standart Bot Paketi (Devre Dışı)</h2>
+  <p>7/24 Aktif: ✅ (Aktif etmek için bize ulaşmalısınız. <a href="https://discord.gg/w5ZbEPGhkF" style="color: white;" class="burayatikla"> Discord</a>)</p>
+  <p>Özel Kod: 10</p>
+  <p>Reklam: ✅</p>
+  <p style="font-weight: bold;">Fiyat: ₺50</p>
+  <br>
+  <button class="satin-al" onclick="parent.location='#'"><i class="fa-solid fa-cart-shopping"></i> Satın Al</button>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:#f44336">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Pro Bot Paketi (Devre Dışı)</h2>
+  <p>7/24 Aktif: ✅(Aktif etmek için bize ulaşmalısınız. <a href="https://discord.gg/w5ZbEPGhkF" style="color: white;" class="burayatikla"> Discord</a>)</p>
+  <p>Özel Kod: 15</p>
+  <p>Reklam: ❌</p>
+  <p style="font-weight: bold;">Fiyat: ₺150</p>
+  <br>
+  <button class="satin-al" onclick="parent.location='#'"><i class="fa-solid fa-cart-shopping"></i> Satın Al</button>
+</div>
+
+<script type="text/javascript">
+	// Hide all elements with class="containerTab", except for the one that matches the clickable grid column
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+<a href="https://discord.gg/w5ZbEPGhkF" target="_blank" class="float">
+<img src="discord-white.svg" class="discord">
+</a>
+
+
+
+
+<!-- iletişim -->
+<div class="container" id="iletisim">
+  <form action="action_page.php">
+
+  	<h3>İletişim Formu Şu Anda Devre Dışı! Ama Eğer İsterseniz <a href="https://discord.gg/w5ZbEPGhkF" target="_blank" class="burayatikla">Buraya</a> Tıklayarak Ulaşabilirsiniz...</h3>
+
+    <label for="fname">İsim</label>
+    <input type="text" id="fname" name="firstname" placeholder="İsminizi giriniz..">
+
+    <label for="lname">Soyisim</label>
+    <input type="text" id="lname" name="lastname" placeholder="Soyisminizi giriniz..">
+
+    <label for="lname">E-Posta</label>
+    <input type="email" id="email" name="emaill" placeholder="E-posta'nızı giriniz..">
+
+    <label for="subject">Mesajınız</label>
+    <textarea id="subject" name="subject" placeholder="Mesajınızı giriniz.." style="height:200px"></textarea>
+
+    <input type="submit" value="Gönder" disabled class="noactive">
+
+  </form>
+</div>
+<!--İletişim Son-->
+
+<br><br><br>
+
+<div class="footer">
+  <p>Discord Bayii © 2023 | Tüm hakları saklıdır.</p>
+</div>
+
+</body>
+</html>
